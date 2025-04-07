@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHASOF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a304f0b409.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: calc(100vh - 4rem); /* Adjusted to account for header */
+            overflow: hidden; /* Prevent extra images from showing */
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body class="bg-white text-gray-10">
+    <header class="fixed top-0 left-0 w-full z-20 bg-white/90 backdrop-blur-md shadow-md p-4 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-blue-600 tracking-tight">Chasof Headstart ECD</h1>
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <ul class="flex space-x-6 text-gray-800 font-medium">
+                    <li>
+                        <a href="#home" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#programs" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#donate" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-800 focus:outline-none" id="mobile-menu-btn">
+                <i class="fas fa-bars w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div class="md:hidden hidden bg-white shadow-lg p-4 absolute top-full left-0 w-full" id="mobile-menu">
+            <ul class="flex flex-col space-y-4 text-gray-800 font-medium">
+                <li><a href="#home" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">About Us</a></li>
+                <li><a href="#programs" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Programs</a></li>
+                <li><a href="#donate" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Donate</a></li>
+                <li><a href="#contact" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <section id="home" class="swiper-container mt-10">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('/images/IMG-20250110-WA0003.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('/images/IMG-20250110-WA0004.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('/images/IMG-20250110-WA0005.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('/images/IMG-20250110-WA0006.jpg');"></div>
+
+        </div>
+    </section>
+
+
+
+    <!-- WHO WE ARE -->
+    <section id="about" class="py-16 px-6 bg-white">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-left tracking-tight">Who We Are</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            The Charles Soares Obiorah Foundation (CHASOF) Head Start ECD Intervention Library is a non-profit organization
+            dedicated to early childhood development, education, and empowerment. CHASOF is committed to providing young children,
+            particularly those in underserved communities, with access to books, learning resources, and educational support during
+             their formative years.
+        </p>
+    </div>
+</section>
+
+
+
+    <!-- join us -->
+    <section id="join_us" class="py-16 px-6 bg-blue-600 text-gray-100">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">Join Us In Shaping Lives</h2>
+            <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
+                Our program is an ongoing Early Childhood Development initiative where registered children aged 0 to 5 years receive books
+                bi-monthly. We aim to engage volunteers as home visitors or encourage parents to read to their children. Registration has
+                begun in Ibusa town, Delta State, with 100 children already enrolled for our pilot phase. Our goal is to provide each child an average of 12 books per year, at approximately ₦5,000 per book, totaling ₦30,000 per child annually, including delivery and volunteer incentives.
+            </p>
+        </div>
+    </section>
+
+
+
+<!-- stats -->
+    <section id="statistics" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center bg-gray-100 py-6">
+                    <p class="text-5xl font-bold text-blue-600">500+</p>
+                    <p class="text-lg text-gray-700 mt-2">Lives Touched</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">50+</p>
+                    <p class="text-lg text-gray-700 mt-2">Communities Reached</p>
+                </div>
+                <div class="text-center bg-gray-100 py-6">
+                    <p class="text-5xl font-bold text-blue-600">1000+</p>
+                    <p class="text-lg text-gray-700 mt-2">Donor Materials Shared</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">25+</p>
+                    <p class="text-lg text-gray-700 mt-2">Programs Held</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">30+</p>
+                    <p class="text-lg text-gray-700 mt-2">Volunteers Engaged</p>
+                </div>
+                <div class="text-center bg-gray-100 py-6">
+                    <p class="text-5xl font-bold text-blue-600">15+</p>
+                    <p class="text-lg text-gray-700 mt-2">Partnerships Formed</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">1,200+</p>
+                    <p class="text-lg text-gray-700 mt-2">Books Distributed</p>
+                </div>
+                <div class="text-center bg-gray-100 py-6">
+                    <p class="text-5xl font-bold text-blue-600">8+</p>
+                    <p class="text-lg text-gray-700 mt-2">Workshops Conducted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- call to action -->
+    <section id="call-to-action" class="bg-gray-900">
+        <div class="grid grid-cols-1 md:grid-cols-[70%_30%] gap-0 min-h-[30vh]">
+            <!-- First Grid: Donation -->
+            <div class="flex flex-col items-center justify-center bg-blue-600 p-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center tracking-tight">Help Us Shape Lives</h2>
+                <p class="text-lg md:text-xl text-white mb-6 text-center max-w-md leading-relaxed">
+                    Your generous donations help us provide books, learning resources, and educational support to 
+                    children in underserved communities. Every contribution makes a difference in shaping their future.
+                </p>
+                <a href="#donate-section" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                    Donate
+                </a>
+            </div>
+            <!-- Second Grid: Volunteer -->
+            <div 
+                class="flex flex-col items-center justify-center p-8 bg-gray-900/80 backdrop-blur-sm" 
+                style="background-image: url('/images/Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg'); background-size: cover; background-position: center;"
+            >
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center tracking-tight">Join Us Become a volunteer</h2>
+                <a href="#join_us" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                    Become a Volunteer
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- board of trustee -->
+    <section id="board-of-trustees" class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Board of Trustees</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Trustee 1 -->
+                <div class="flex flex-col items-center">
+                    <img 
+                        src="/images/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
+                        alt="Trustee 1" 
+                        class="w-40 h-40 object-cover mb-4 shadow-md"
+                    >
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">victoria osadebe</h3>
+                        <p class="text-md text-gray-600 italic mt-1">Chairperson</p>
+                    </div>
+                </div>
+                <!-- Trustee 2 -->
+                <div class="flex flex-col items-center">
+                    <img 
+                        src="/images/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
+                        alt="Trustee 2" 
+                        class="w-40 h-40 object-cover mb-4 shadow-md"
+                    >
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">osadebe</h3>
+                        <p class="text-md text-gray-600 italic mt-1">founder</p>
+                    </div>
+                </div>
+                <!-- Trustee 3 -->
+                <div class="flex flex-col items-center">
+                    <img 
+                        src="/images/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
+                        alt="Trustee 3" 
+                        class="w-40 h-40 object-cover mb-4 shadow-md"
+                    >
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">osadebe</h3>
+                        <p class="text-md text-gray-600 italic mt-1">Treasurer</p>
+                    </div>
+                </div>
+                <!-- Trustee 4 -->
+                <div class="flex flex-col items-center">
+                    <img 
+                        src="/images/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
+                        alt="Trustee 4" 
+                        class="w-40 h-40 object-cover mb-4 shadow-md"
+                    >
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">oasdebe</h3>
+                        <p class="text-md text-gray-600 italic mt-1">Secretary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section id="goals-vision-mission" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <!-- Our Goals -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Goals</h2>
+                    <p class="text-lg text-gray-700">
+                        We aim to empower young children in underserved communities by providing access to quality education, 
+                        fostering literacy, and supporting their holistic development. Our goals include reaching 10,000 children 
+                        annually, establishing 100 community libraries, and training 500 educators over the next five years.
+                    </p>
+                </div>
+                <!-- Our Vision -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Vision</h2>
+                    <p class="text-lg text-gray-700">
+                        A world where every child, regardless of background, has the opportunity to learn, grow, and thrive 
+                        through early childhood education and community support.
+                    </p>
+                </div>
+            </div>
+            <!-- Our Mission -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Mission</h2>
+                <p class="text-lg text-gray-700">
+                    To provide educational resources, books, and programs that inspire curiosity, build confidence, and 
+                    lay the foundation for lifelong learning in children aged 0-8, with a focus on underserved regions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="donate-section" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Donate (Monetary) -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Donate</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Your financial support helps us reach more children. Please send your donations to the account below:
+                    </p>
+
+                    <ul class="text-lg text-gray-700 space-y-2">
+                        <li><strong>Bank:</strong> First Bank Nigeria</li>
+                        <li><strong>Account Name:</strong>Charles Soares Obiorah Foundation</li>
+                        <li><strong>Account Number:</strong> 2029325559</li>
+                        <li><strong>Routing Number:</strong> 000000000</li>
+                    </ul>
+                </div>
+                <!-- Material Donations Form -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Material Donations</h2>
+                    <form class="space-y-4">
+                        <!-- First Name & Last Name Side by Side -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="first-name" class="block text-lg text-gray-700 mb-1">First Name</label>
+                                <input 
+                                    type="text" 
+                                    id="first-name" 
+                                    name="first-name" 
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                    placeholder="Enter your first name" 
+                                    required
+                                >
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-lg text-gray-700 mb-1">Last Name</label>
+                                <input 
+                                    type="text" 
+                                    id="last-name" 
+                                    name="last-name" 
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                    placeholder="Enter your last name" 
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <!-- Phone Number & Email Side by Side -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="phone" class="block text-lg text-gray-700 mb-1">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                    placeholder="Enter your phone number" 
+                                    required
+                                >
+                            </div>
+                            <div>
+                                <label for="email" class="block text-lg text-gray-700 mb-1">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                    placeholder="Enter your email" 
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <!-- Home Address -->
+                        <div>
+                            <label for="address" class="block text-lg text-gray-700 mb-1">Home Address</label>
+                            <input 
+                                type="text" 
+                                id="address" 
+                                name="address" 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                placeholder="Enter your home address" 
+                                required
+                            >
+                        </div>
+                        <!-- Materials to Donate -->
+                        <div>
+                            <label for="materials" class="block text-lg text-gray-700 mb-1">Materials to Donate</label>
+                            <textarea 
+                                id="materials" 
+                                name="materials" 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                placeholder="e.g., Books, Stationery, Educational Toys" 
+                                rows="4" 
+                                required
+                            ></textarea>
+                        </div>
+                        <button 
+                            type="submit" 
+                            class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full"
+                        >
+                            Submit Donation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer id="footer-section" class="bg-gray-800 text-white py-4 px-4">
+        <div class="container mx-auto mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2" id="contact-us">Get in Touch</h3>
+                    <div class="flex items-center space-x-2 mb-2">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>    
+                    <a href="mailto:chasofheadstart@gmail.com" class="text-gray-300 hover:text-white text-xs">chasofheadstart@gmail.com</a>
+                    </div>
+                    <div class="flex space-x-2">
+                        <a href="https://facebook.com/chasof_headstart" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/+2348023110009" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>  
+                        </a>
+                        <a href="https://instagram.com/chasof_headstart" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="tel:+14049347211" target="_blank" class="text-gray-300 hover:text-white">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Explore</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#home" class="text-gray-300 hover:text-white text-xs">Home</a></li>
+                        <li><a href="#contact-us" class="text-gray-300 hover:text-white text-xs">Contact Us</a></li>
+                        <li><a href="#donate-section" class="text-gray-300 hover:text-white text-xs">Donate</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white text-xs">About</a></li>
+                        <li><a href="#statistics" class="text-gray-300 hover:text-white text-xs">Our Impact</a></li>
+                    </ul>
+                </div>
+                <!-- Additional Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">About CHASOF</h3>
+                    <p class="text-gray-300 text-xs">
+                        The Charles Soares Obiorah Foundation (CHASOF) is dedicated to early childhood development 
+                        and education in underserved communities.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-4 text-center text-gray-400 text-xs">
+                <p>© 2025 Chukwura. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll-arrow -->
+    <a href="#home" id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600/80 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 z-30 hidden">
+    <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+    </a>
+
+<!-- Optional JavaScript for Smooth Scrolling -->
+  <script>
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Swiper Initialization
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+    });
+
+    // Back to Top Smooth Scroll and Scroll-Based Visibility
+    const backToTop = document.getElementById('back-to-top');
+    backToTop.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) { // Show after scrolling 200px
+            backToTop.classList.remove('hidden');
+        } else {
+            backToTop.classList.add('hidden');
+        }
+    });
+</script>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!--slider script-->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+</html>

@@ -78,14 +78,13 @@
     </header>
     
     <!--all images not showing-->
-    <section id="home" class="swiper-container mt-10">
+    <section id="home" class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0003.jpg');"></div>
             <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0004.jpg');"></div>
             <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0005.jpg');"></div>
             <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0006.jpg');"></div>
-            <!--test code-->
-            <div class="swiper-slide" style="background-image: url('/images/F7SA9k2WAAABTec.jpeg');"></div>
+            
         </div>
     </section>
 
@@ -433,11 +432,12 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-2">About CHASOF</h3>
                     <p class="text-gray-300 text-xs">
-                        TESTCODE TESTCODE TESTCODE
+                        TESTCODE TESTCODE TESTCODE testing 
                         The Charles Soares Obiorah Foundation (CHASOF) is dedicated to early childhood development 
                         and education in underserved communities.
                     </p>
                 </div>
+
             </div>
             <div class="mt-4 text-center text-gray-400 text-xs">
                 <p>© 2025 Chukwura. All rights reserved.</p>
@@ -451,23 +451,30 @@
     </a>
 
 <!-- Optional JavaScript for Smooth Scrolling -->
-  <script>
-    // Mobile Menu Toggle
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-        const mobileMenu = document.getElementById('mobile-menu');
+ <script>
+    // Mobile Menu Toggle with Touch Support
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMenu(e) {
+        e.preventDefault(); // Prevent default touch/click behavior if needed
+        console.log('Menu toggled!'); // Debug to confirm action
         mobileMenu.classList.toggle('hidden');
-    });
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+    menuBtn.addEventListener('touchstart', toggleMenu); // Mobile touch support
 
     // Swiper Initialization
     var swiper = new Swiper('.swiper-container', {
         loop: true,
         autoplay: {
-            delay: 3500,
+            delay: 3000,
             disableOnInteraction: false,
         },
     });
 
-    // Back to Top Smooth Scroll and Scroll-Based Visibility
+    // Back to Top Smooth Scroll and Visibility
     const backToTop = document.getElementById('back-to-top');
     backToTop.addEventListener('click', function(e) {
         e.preventDefault();
@@ -475,32 +482,13 @@
     });
 
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 200) { // Show after scrolling 200px
+        if (window.scrollY > 200) {
             backToTop.classList.remove('hidden');
         } else {
             backToTop.classList.add('hidden');
         }
     });
 </script>
-
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
-    <!--slider script-->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-        });
-    </script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHASOF</title>
+    <title>Chasof Headstart(ECD)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a304f0b409.js" crossorigin="anonymous"></script>
@@ -44,17 +44,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#programs" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                            Programs
+                        <a href="#statistics" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            Impacts
                         </a>
                     </li>
                     <li>
-                        <a href="#donate" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#donate-section" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
                             Donate
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#footer-section" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
                             Contact
                         </a>
                     </li>
@@ -70,9 +70,9 @@
             <ul class="flex flex-col space-y-4 text-gray-800 font-medium">
                 <li><a href="#home" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Home</a></li>
                 <li><a href="#about" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">About Us</a></li>
-                <li><a href="#programs" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Programs</a></li>
-                <li><a href="#donate" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Donate</a></li>
-                <li><a href="#contact" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+                <li><a href="#statistics" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Impacts</a></li>
+                <li><a href="#donate-section" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Donate</a></li>
+                <li><a href="#footer-section" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -101,7 +101,7 @@
              their formative years.
         </p>
     </div>
-</section>
+    </section>
 
 
 
@@ -298,91 +298,23 @@
                         <li><strong>Routing Number:</strong> 000000000</li>
                     </ul>
                 </div>
-                <!-- Material Donations Form -->
+                  <!-- Material Donations (Google Form) -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Material Donations</h2>
-                    <form class="space-y-4">
-                        <!-- First Name & Last Name Side by Side -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label for="first-name" class="block text-lg text-gray-700 mb-1">First Name</label>
-                                <input 
-                                    type="text" 
-                                    id="first-name" 
-                                    name="first-name" 
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                    placeholder="Enter your first name" 
-                                    required
-                                >
-                            </div>
-                            <div>
-                                <label for="last-name" class="block text-lg text-gray-700 mb-1">Last Name</label>
-                                <input 
-                                    type="text" 
-                                    id="last-name" 
-                                    name="last-name" 
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                    placeholder="Enter your last name" 
-                                    required
-                                >
-                            </div>
-                        </div>
-                        <!-- Phone Number & Email Side by Side -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label for="phone" class="block text-lg text-gray-700 mb-1">Phone Number</label>
-                                <input 
-                                    type="tel" 
-                                    id="phone" 
-                                    name="phone" 
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                    placeholder="Enter your phone number" 
-                                    required
-                                >
-                            </div>
-                            <div>
-                                <label for="email" class="block text-lg text-gray-700 mb-1">Email</label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                    placeholder="Enter your email" 
-                                    required
-                                >
-                            </div>
-                        </div>
-                        <!-- Home Address -->
-                        <div>
-                            <label for="address" class="block text-lg text-gray-700 mb-1">Home Address</label>
-                            <input 
-                                type="text" 
-                                id="address" 
-                                name="address" 
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                placeholder="Enter your home address" 
-                                required
-                            >
-                        </div>
-                        <!-- Materials to Donate -->
-                        <div>
-                            <label for="materials" class="block text-lg text-gray-700 mb-1">Materials to Donate</label>
-                            <textarea 
-                                id="materials" 
-                                name="materials" 
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                placeholder="e.g., Books, Stationery, Educational Toys" 
-                                rows="4" 
-                                required
-                            ></textarea>
-                        </div>
-                        <button 
-                            type="submit" 
-                            class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full"
-                        >
-                            Submit Donation
-                        </button>
-                    </form>
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Material Donations</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    Support our mission by donating books, stationery, or educational toys. Fill out the form below to get started.
+                </p>
+                <div class="relative w-full">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScVT1dicXaVwGHeVKMtDrv_muh0NzYmQEb5AYh06L9sItL12w/viewform?embedded=true" 
+                        width="100%" 
+                        height="520" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        class="w-full rounded-lg shadow-sm"
+                    >Loading…</iframe>
+                </div>
                 </div>
             </div>
         </div>
@@ -451,15 +383,25 @@
     </a>
 
 <!-- Optional JavaScript for Smooth Scrolling -->
- <script>
-    // Mobile Menu Toggle with Touch Support
+<script>
+    // Mobile Menu Toggle with Touch Support and Icon Swap
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = menuBtn.querySelector('i'); // Target the <i> inside the button
 
     function toggleMenu(e) {
         e.preventDefault(); // Prevent default touch/click behavior if needed
         console.log('Menu toggled!'); // Debug to confirm action
         mobileMenu.classList.toggle('hidden');
+
+        // Toggle icon between hamburger and X
+        if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        } else {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+        }
     }
 
     menuBtn.addEventListener('click', toggleMenu);
@@ -469,7 +411,7 @@
     var swiper = new Swiper('.swiper-container', {
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
         },
     });

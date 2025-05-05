@@ -18,10 +18,42 @@
             height: calc(100vh - 4rem); /* Adjusted to account for header */
             overflow: hidden; /* Prevent extra images from showing */
         }
+       
         .swiper-slide {
             background-size: cover;
             background-position: center;
         }
+        
+        .animate-fadeInScale {
+        animation: fadeInScale 1s ease-out forwards;
+         }
+        
+         .delay-200 {
+        animation-delay: 0.2s;
+         }
+        @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+         }
+       
+         .animate-pulse {
+        animation: pulse 2s infinite;
+         }
+         @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+         }
+
     </style>
 
 </head>
@@ -29,7 +61,15 @@
     <header class="fixed top-0 left-0 w-full z-20 bg-white/90 backdrop-blur-md shadow-md p-4 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <h1 class="text-2xl font-bold text-blue-600 tracking-tight">Chasof Headstart ECD</h1>
+            <a href="#home" class="flex items-center">
+                <img 
+                    src="logo.jpg" 
+                    alt="Chasof Headstart ECD Logo" 
+                    width="41" 
+                    height="52" 
+                    class="max-w-[150px] sm:max-w-[200px] h-auto"
+                >
+            </a>
             <!-- Navigation -->
             <nav class="hidden md:flex items-center space-x-8">
                 <ul class="flex space-x-6 text-gray-800 font-medium">
@@ -78,36 +118,66 @@
     </header>
     
     <!--all images not showing-->
-    <section id="home" class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0003.jpg');"></div>
-            <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0004.jpg');"></div>
-            <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0005.jpg');"></div>
-            <div class="swiper-slide" style="background-image: url('/IMG-20250110-WA0006.jpg');"></div>
-            
+    <section id="home" class="swiper-container mt-10">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0003.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Empower Young Minds</h2>
+                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Transform lives with books and education in underserved communities.</p>
+                <a href="#donate" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Donate Now</a>
+            </div>
         </div>
-    </section>
-
-
-
-    <!-- WHO WE ARE -->
-    <section id="about" class="py-16 px-6 bg-white">
-    <div class="container mx-auto max-w-5xl">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-left tracking-tight">Who We Are</h2>
-        <p class="text-lg text-gray-700 leading-relaxed">
-            The Charles Soares Obiorah Foundation (CHASOF) Head Start ECD Intervention Library is a non-profit organization
-            dedicated to early childhood development, education, and empowerment. CHASOF is committed to providing young children,
-            particularly those in underserved communities, with access to books, learning resources, and educational support during
-             their formative years.
-        </p>
+        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0004.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-600/70 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Build Bright Futures</h2>
+                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Join CHASOF to shape the next generation through learning.</p>
+                <a href="#join_us" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Volunteer Today</a>
+            </div>
+        </div>
+        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0005.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-pink-600/70 to-blue-600/70 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Inspire Lifelong Learning</h2>
+                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Support our goal to reach 10,000 children annually.</p>
+                <a href="#donate" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Support Us</a>
+            </div>
+        </div>
+        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0006.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Together, We Thrive</h2>
+                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Your contribution fuels education and opportunity.</p>
+                <a href="#donate" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Give Now</a>
+            </div>
+        </div>
+        <div class="swiper-slide relative" style="background-image: url('/contacts_chasof.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-600/70 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Transform Communities</h2>
+                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Empower children with knowledge and hope.</p>
+                <a href="#join_us" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Join the Mission</a>
+            </div>
+        </div>
     </div>
     </section>
 
 
 
+    <!-- WHO WE ARE -->
+    <section id="about" class="py-12 px-8 bg-white">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-left tracking-tight">Who We Are</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                The Charles Soares Obiorah Foundation (CHASOF) Head Start ECD Intervention Library is a non-profit organization
+                dedicated to early childhood development, education, and empowerment. CHASOF is committed to providing young children,
+                particularly those in underserved communities, with access to books, learning resources, and educational support during
+                their formative years.
+            </p>
+        </div>
+    </section>
+
+
+
     <!-- join us -->
-    <section id="join_us" class="py-16 px-6 bg-blue-600 text-gray-100">
-        <div class="container mx-auto max-w-5xl text-center">
+    <section id="join_us" class="py-12 px-8 bg-blue-600 text-gray-100">
+        <div class="container mx-auto max-w-7xl text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">Join Us In Shaping Lives</h2>
             <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
                 Our program is an ongoing Early Childhood Development initiative where registered children aged 0 to 5 years receive books
@@ -120,73 +190,163 @@
 
 
 <!-- stats -->
-    <section id="statistics" class="py-16 px-6 bg-white">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="text-center bg-gray-100 py-6">
-                    <p class="text-5xl font-bold text-blue-600">500+</p>
-                    <p class="text-lg text-gray-700 mt-2">Lives Touched</p>
+<section id="statistics" class="py-12 px-8 bg-white">
+    <div class="container mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center bg-gray-300 py-6">
+                <p class="text-5xl font-bold text-blue-600">500+</p>
+                <p class="text-lg text-gray-700 mt-2">Lives Touched</p>
+            </div>
+            <div class="text-center bg-white py-6">
+                <p class="text-5xl font-bold text-blue-600">50+</p>
+                <p class="text-lg text-gray-700 mt-2">Communities Reached</p>
+            </div>
+            <div class="text-center bg-gray-300 py-6">
+                <p class="text-5xl font-bold text-blue-600">1000+</p>
+                <p class="text-lg text-gray-700 mt-2">Donor Materials Shared</p>
+            </div>
+            <div class="text-center bg-white py-6">
+                <p class="text-5xl font-bold text-blue-600">25+</p>
+                <p class="text-lg text-gray-700 mt-2">Programs Held</p>
+            </div>
+            <div class="text-center bg-white py-6">
+                <p class="text-5xl font-bold text-blue-600">30+</p>
+                <p class="text-lg text-gray-700 mt-2">Volunteers Engaged</p>
+            </div>
+            <div class="text-center bg-gray-300 py-6">
+                <p class="text-5xl font-bold text-blue-600">15+</p>
+                <p class="text-lg text-gray-700 mt-2">Partnerships Formed</p>
+            </div>
+            <div class="text-center bg-white py-6">
+                <p class="text-5xl font-bold text-blue-600">1,200+</p>
+                <p class="text-lg text-gray-700 mt-2">Books Distributed</p>
+            </div>
+            <div class="text-center bg-gray-300 py-6">
+                <p class="text-5xl font-bold text-blue-600">8+</p>
+                <p class="text-lg text-gray-700 mt-2">Workshops Conducted</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center tracking-tight">Our Impact in Pictures</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img 
+                            src="/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
+                            alt="Children reading books at CHASOF event" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg text-gray-700">Children in Ibusa joyfully engage with books distributed during our pilot program.</p>
+                    </div>
                 </div>
-                <div class="text-center bg-white py-6">
-                    <p class="text-5xl font-bold text-blue-600">50+</p>
-                    <p class="text-lg text-gray-700 mt-2">Communities Reached</p>
+                <!-- Gallery Item 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img 
+                            src="/Snapins.ai_466864851_1084230620092094_7471021545178724828_n_1080.jpg" 
+                            alt="Volunteers distributing books" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg text-gray-700">Volunteers deliver educational materials to underserved communities in Delta State.</p>
+                    </div>
                 </div>
-                <div class="text-center bg-gray-100 py-6">
-                    <p class="text-5xl font-bold text-blue-600">1000+</p>
-                    <p class="text-lg text-gray-700 mt-2">Donor Materials Shared</p>
+                <!-- Gallery Item 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img 
+                            src="/Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg" 
+                            alt="Community library opening" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg text-gray-700">Opening a new community library to foster literacy and learning for young minds.</p>
+                    </div>
                 </div>
-                <div class="text-center bg-white py-6">
-                    <p class="text-5xl font-bold text-blue-600">25+</p>
-                    <p class="text-lg text-gray-700 mt-2">Programs Held</p>
+                <!-- Gallery Item 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img 
+                            src="/WhatsApp Image 2025-01-01 at 20.38.00_1101e87e.jpg" 
+                            alt="Workshop for educators" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg text-gray-700">Training educators to support early childhood development in our workshops.</p>
+                    </div>
                 </div>
-                <div class="text-center bg-white py-6">
-                    <p class="text-5xl font-bold text-blue-600">30+</p>
-                    <p class="text-lg text-gray-700 mt-2">Volunteers Engaged</p>
-                </div>
-                <div class="text-center bg-gray-100 py-6">
-                    <p class="text-5xl font-bold text-blue-600">15+</p>
-                    <p class="text-lg text-gray-700 mt-2">Partnerships Formed</p>
-                </div>
-                <div class="text-center bg-white py-6">
-                    <p class="text-5xl font-bold text-blue-600">1,200+</p>
-                    <p class="text-lg text-gray-700 mt-2">Books Distributed</p>
-                </div>
-                <div class="text-center bg-gray-100 py-6">
-                    <p class="text-5xl font-bold text-blue-600">8+</p>
-                    <p class="text-lg text-gray-700 mt-2">Workshops Conducted</p>
+                <!-- Gallery Item 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img 
+                            src="/IMG-20250110-WA0005.jpg" 
+                            alt="Children with donated toys" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg text-gray-700">Smiles abound as children receive educational toys from generous donors.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <!-- call to action -->
-    <section id="call-to-action" class="bg-gray-900">
-        <div class="grid grid-cols-1 md:grid-cols-[70%_30%] gap-0 min-h-[30vh]">
-            <!-- First Grid: Donation -->
-            <div class="flex flex-col items-center justify-center bg-blue-600 p-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center tracking-tight">Help Us Shape Lives</h2>
-                <p class="text-lg md:text-xl text-white mb-6 text-center max-w-md leading-relaxed">
-                    Your generous donations help us provide books, learning resources, and educational support to 
-                    children in underserved communities. Every contribution makes a difference in shaping their future.
+<section id="call-to-action" class="py-12 px-8 bg-gray-900">
+    <div class="container mx-auto max-w-7xl">
+        <!-- Donate Now -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 items-center bg-blue-600 rounded-lg shadow-lg overflow-hidden">
+            <!-- Text and Button -->
+            <div class="p-8 flex flex-col justify-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Help Us Shape Lives</h2>
+                <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
+                    Your generous donations provide books, learning resources, and educational support to children in underserved communities. Every contribution makes a difference.
                 </p>
-                <a href="#donate-section" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-                    Donate
-                </a>
+                <a href="#donate-section" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition mx-auto">Donate Now</a>
             </div>
-            <!-- Second Grid: Volunteer -->
-            <div 
-                class="flex flex-col items-center justify-center p-8 bg-gray-900/80 backdrop-blur-sm" 
-                style="background-image: url('/Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg'); background-size: cover; background-position: center;"
-            >
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center tracking-tight">Join Us Become a volunteer</h2>
-                <a href="#join_us" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-                    Become a Volunteer
-                </a>
+            <!-- Image -->
+            <div class="h-64 md:h-full">
+                <img 
+                    src="./Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg" 
+                    alt="Children receiving books from CHASOF" 
+                    class="w-full h-full object-cover"
+                >
             </div>
         </div>
-    </section>
+        <!-- Become a Volunteer -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+            <!-- Text and Button -->
+            <div class="p-8 flex flex-col justify-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Join Us as a Volunteer</h2>
+                <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
+                    Become a part of our mission by volunteering as a home visitor or educator. Help us inspire and empower young minds through early childhood development.
+                </p>
+                <a href="#join_us" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition mx-auto">Volunteer Today</a>
+            </div>
+            <!-- Image -->
+            <div class="h-64 md:h-full">
+                <img 
+                    src="/Snapins.ai_466864851_1084230620092094_7471021545178724828_n_1080.jpg" 
+                    alt="Volunteers engaging with children at CHASOF event" 
+                    class="w-full h-full object-cover"
+                >
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- board of trustee -->
@@ -280,9 +440,8 @@
         </div>
     </section>
 
-
-    <section id="donate-section" class="py-16 px-6 bg-white">
-        <div class="container mx-auto">
+    <section id="donate-section" class="py-12 px-8 bg-white">
+        <div class="container mx-auto max-w-7xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Donate (Monetary) -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -290,31 +449,29 @@
                     <p class="text-lg text-gray-700 mb-4">
                         Your financial support helps us reach more children. Please send your donations to the account below:
                     </p>
-
                     <ul class="text-lg text-gray-700 space-y-2">
                         <li><strong>Bank:</strong> First Bank Nigeria</li>
-                        <li><strong>Account Name:</strong>Charles Soares Obiorah Foundation</li>
-                        <li><strong>Account Number:</strong> 2029325559</li>
-                        <li><strong>Routing Number:</strong> 000000000</li>
+                        <li><strong>Account Name:</strong> Charles Soares Obiorah Foundation</li>
+                        <li><strong>Account Number:</strong> 2029325559</li>        
                     </ul>
                 </div>
-                  <!-- Material Donations (Google Form) -->
+                <!-- Material Donations (Google Form) -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4">Material Donations</h2>
-                <p class="text-lg text-gray-700 mb-4">
-                    Support our mission by donating books, stationery, or educational toys. Fill out the form below to get started.
-                </p>
-                <div class="relative w-full">
-                    <iframe 
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScVT1dicXaVwGHeVKMtDrv_muh0NzYmQEb5AYh06L9sItL12w/viewform?embedded=true" 
-                        width="100%" 
-                        height="520" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0" 
-                        class="w-full rounded-lg shadow-sm"
-                    >Loading…</iframe>
-                </div>
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Material Donations</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Support our mission by donating books, stationery, or educational toys. Fill out the form below to get started.
+                    </p>
+                    <div class="relative w-full">
+                        <iframe 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScVT1dicXaVwGHeVKMtDrv_muh0NzYmQEb5AYh06L9sItL12w/viewform?embedded=true" 
+                            width="100%" 
+                            height="520" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            class="w-full rounded-lg shadow-sm"
+                        >Loading…</iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -346,8 +503,10 @@
                         <a href="tel:+14049347211" target="_blank" class="text-gray-300 hover:text-white">
                             <i class="fa fa-phone-square" aria-hidden="true"></i>
                         </a>
+
                     </div>
-                </div>
+                </div>>Loading form please wait…</iframe>
+                </di
 
                 <!-- Navigation -->
                 <div>
@@ -363,8 +522,7 @@
                 <!-- Additional Info -->
                 <div>
                     <h3 class="text-lg font-semibold mb-2">About CHASOF</h3>
-                    <p class="text-gray-300 text-xs">
-                        TESTCODE TESTCODE TESTCODE testing 
+                    <p class="text-gray-300 text-xs"> 
                         The Charles Soares Obiorah Foundation (CHASOF) is dedicated to early childhood development 
                         and education in underserved communities.
                     </p>
@@ -411,7 +569,7 @@
     var swiper = new Swiper('.swiper-container', {
         loop: true,
         autoplay: {
-            delay: 3500,
+            delay: 2500,
             disableOnInteraction: false,
         },
     });

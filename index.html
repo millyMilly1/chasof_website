@@ -25,37 +25,35 @@
         }
         
         .animate-fadeInScale {
-        animation: fadeInScale 1s ease-out forwards;
-         }
+            animation: fadeInScale 1s ease-out forwards;
+        }
         
-         .delay-200 {
-        animation-delay: 0.2s;
-         }
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
         @keyframes fadeInScale {
-        0% {
-            opacity: 0;
-            transform: scale(0.8);
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
-         }
        
-         .animate-pulse {
-        animation: pulse 2s infinite;
-         }
-         @keyframes pulse {
-        0%, 100% {
-            transform: scale(1);
+        .animate-pulse {
+            animation: pulse 2s infinite;
         }
-        50% {
-            transform: scale(1.05);
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
         }
-         }
-
     </style>
-
 </head>
 <body class="bg-white text-gray-10">
     <header class="fixed top-0 left-0 w-full z-20 bg-white/90 backdrop-blur-md shadow-md p-4 transition-all duration-300">
@@ -63,7 +61,7 @@
             <!-- Logo -->
             <a href="#home" class="flex items-center">
                 <img 
-                    src="logo.jpg" 
+                    src="/images/logo.jpg" 
                     alt="Chasof Headstart ECD Logo" 
                     width="41" 
                     height="52" 
@@ -73,31 +71,14 @@
             <!-- Navigation -->
             <nav class="hidden md:flex items-center space-x-8">
                 <ul class="flex space-x-6 text-gray-800 font-medium">
-                    <li>
-                        <a href="#home" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#statistics" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                            Impacts
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#donate-section" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                            Donate
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#footer-section" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                            Contact
-                        </a>
-                    </li>
+                    <li><a href="#home" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Home</a></li>
+                    <li><a href="#about" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">About Us</a></li>
+                    <li><a href="#join_us" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Join Us</a></li>
+                    <li><a href="#statistics" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Impacts</a></li>
+                    <li><a href="#gallery" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Gallery</a></li>
+                    <li><a href="#blog" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Blog</a></li>
+                    <li><a href="#donate-section" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Donate</a></li>
+                    <li><a href="#footer-section" class="relative px-2 py-1 hover:text-blue-600 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">Contact</a></li>
                 </ul>
             </nav>
             <!-- Mobile Menu Button -->
@@ -110,55 +91,56 @@
             <ul class="flex flex-col space-y-4 text-gray-800 font-medium">
                 <li><a href="#home" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Home</a></li>
                 <li><a href="#about" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">About Us</a></li>
+                <li><a href="#join_us" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Join Us</a></li>
                 <li><a href="#statistics" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Impacts</a></li>
+                <li><a href="#gallery" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Gallery</a></li>
+                <li><a href="#blog" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Blog</a></li>
                 <li><a href="#donate-section" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Donate</a></li>
                 <li><a href="#footer-section" class="block px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
             </ul>
         </div>
     </header>
     
-    <!--all images not showing-->
+    <!-- Home Section -->
     <section id="home" class="swiper-container mt-10">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0003.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70 flex flex-col items-center justify-center text-center px-4">
-                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Empower Young Minds</h2>
-                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Transform lives with books and education in underserved communities.</p>
-                <a href="#donate" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Donate Now</a>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide relative" style="background-image: url('/images/IMG-20250110-WA0003.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70 flex flex-col items-center justify-center text-center px-4">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Empower Young Minds</h2>
+                    <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Transform lives with books and education in underserved communities.</p>
+                    <a href="#donate-section" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Donate Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide relative" style="background-image: url('/images/IMG-20250110-WA0004.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-600/70 flex flex-col items-center justify-center text-center px-4">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Build Bright Futures</h2>
+                    <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Join CHASOF to shape the next generation through learning.</p>
+                    <a href="#join_us" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Volunteer Today</a>
+                </div>
+            </div>
+            <div class="swiper-slide relative" style="background-image: url('/images/IMG-20250110-WA0005.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-600/70 to-blue-600/70 flex flex-col items-center justify-center text-center px-4">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Inspire Lifelong Learning</h2>
+                    <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Support our goal to reach 10,000 children annually.</p>
+                    <a href="#donate-section" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Support Us</a>
+                </div>
+            </div>
+            <div class="swiper-slide relative" style="background-image: url('/images/IMG-20250110-WA0006.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70 flex flex-col items-center justify-center text-center px-4">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Together, We Thrive</h2>
+                    <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Your contribution fuels education and opportunity.</p>
+                    <a href="#donate-section" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Give Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide relative" style="background-image: url('/images/contacts_chasof.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-600/70 flex flex-col items-center justify-center text-center px-4">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Transform Communities</h2>
+                    <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Empower children with knowledge and hope.</p>
+                    <a href="#join_us" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Join the Mission</a>
+                </div>
             </div>
         </div>
-        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0004.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-600/70 flex flex-col items-center justify-center text-center px-4">
-                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Build Bright Futures</h2>
-                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Join CHASOF to shape the next generation through learning.</p>
-                <a href="#join_us" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Volunteer Today</a>
-            </div>
-        </div>
-        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0005.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-r from-pink-600/70 to-blue-600/70 flex flex-col items-center justify-center text-center px-4">
-                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Inspire Lifelong Learning</h2>
-                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Support our goal to reach 10,000 children annually.</p>
-                <a href="#donate" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Support Us</a>
-            </div>
-        </div>
-        <div class="swiper-slide relative" style="background-image: url('/IMG-20250110-WA0006.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70 flex flex-col items-center justify-center text-center px-4">
-                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Together, We Thrive</h2>
-                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Your contribution fuels education and opportunity.</p>
-                <a href="#donate" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Give Now</a>
-            </div>
-        </div>
-        <div class="swiper-slide relative" style="background-image: url('/contacts_chasof.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-600/70 flex flex-col items-center justify-center text-center px-4">
-                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl animate-fadeInScale">Transform Communities</h2>
-                <p class="text-xl md:text-2xl text-yellow-200 max-w-3xl drop-shadow-lg animate-fadeInScale delay-200">Empower children with knowledge and hope.</p>
-                <a href="#join_us" class="mt-6 bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-all animate-pulse">Join the Mission</a>
-            </div>
-        </div>
-    </div>
     </section>
-
-
 
     <!-- WHO WE ARE -->
     <section id="about" class="py-12 px-8 bg-white">
@@ -173,9 +155,7 @@
         </div>
     </section>
 
-
-
-    <!-- join us -->
+    <!-- Join Us -->
     <section id="join_us" class="py-12 px-8 bg-blue-600 text-gray-100">
         <div class="container mx-auto max-w-7xl text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">Join Us In Shaping Lives</h2>
@@ -187,58 +167,56 @@
         </div>
     </section>
 
-
-
-<!-- stats -->
-<section id="statistics" class="py-12 px-8 bg-white">
-    <div class="container mx-auto max-w-7xl">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="text-center bg-gray-300 py-6">
-                <p class="text-5xl font-bold text-blue-600">500+</p>
-                <p class="text-lg text-gray-700 mt-2">Lives Touched</p>
-            </div>
-            <div class="text-center bg-white py-6">
-                <p class="text-5xl font-bold text-blue-600">50+</p>
-                <p class="text-lg text-gray-700 mt-2">Communities Reached</p>
-            </div>
-            <div class="text-center bg-gray-300 py-6">
-                <p class="text-5xl font-bold text-blue-600">1000+</p>
-                <p class="text-lg text-gray-700 mt-2">Donor Materials Shared</p>
-            </div>
-            <div class="text-center bg-white py-6">
-                <p class="text-5xl font-bold text-blue-600">25+</p>
-                <p class="text-lg text-gray-700 mt-2">Programs Held</p>
-            </div>
-            <div class="text-center bg-white py-6">
-                <p class="text-5xl font-bold text-blue-600">30+</p>
-                <p class="text-lg text-gray-700 mt-2">Volunteers Engaged</p>
-            </div>
-            <div class="text-center bg-gray-300 py-6">
-                <p class="text-5xl font-bold text-blue-600">15+</p>
-                <p class="text-lg text-gray-700 mt-2">Partnerships Formed</p>
-            </div>
-            <div class="text-center bg-white py-6">
-                <p class="text-5xl font-bold text-blue-600">1,200+</p>
-                <p class="text-lg text-gray-700 mt-2">Books Distributed</p>
-            </div>
-            <div class="text-center bg-gray-300 py-6">
-                <p class="text-5xl font-bold text-blue-600">8+</p>
-                <p class="text-lg text-gray-700 mt-2">Workshops Conducted</p>
+    <!-- Stats -->
+    <section id="statistics" class="py-12 px-8 bg-white">
+        <div class="container mx-auto max-w-7xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center bg-gray-300 py-6">
+                    <p class="text-5xl font-bold text-blue-600">500+</p>
+                    <p class="text-lg text-gray-700 mt-2">Lives Touched</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">50+</p>
+                    <p class="text-lg text-gray-700 mt-2">Communities Reached</p>
+                </div>
+                <div class="text-center bg-gray-300 py-6">
+                    <p class="text-5xl font-bold text-blue-600">1000+</p>
+                    <p class="text-lg text-gray-700 mt-2">Donor Materials Shared</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">25+</p>
+                    <p class="text-lg text-gray-700 mt-2">Programs Held</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">30+</p>
+                    <p class="text-lg text-gray-700 mt-2">Volunteers Engaged</p>
+                </div>
+                <div class="text-center bg-gray-300 py-6">
+                    <p class="text-5xl font-bold text-blue-600">15+</p>
+                    <p class="text-lg text-gray-700 mt-2">Partnerships Formed</p>
+                </div>
+                <div class="text-center bg-white py-6">
+                    <p class="text-5xl font-bold text-blue-600">1,200+</p>
+                    <p class="text-lg text-gray-700 mt-2">Books Distributed</p>
+                </div>
+                <div class="text-center bg-gray-300 py-6">
+                    <p class="text-5xl font-bold text-blue-600">8+</p>
+                    <p class="text-lg text-gray-700 mt-2">Workshops Conducted</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Gallery -->
-    <section id="gallery" class="py-16 px-6 bg-white">
-        <div class="container mx-auto max-w-5xl">
+    <section id="gallery" class="py-12 px-8 bg-white">
+        <div class="container mx-auto max-w-7xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center tracking-tight">Our Impact in Pictures</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery Item 1 -->
                 <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
                     <div class="relative w-full aspect-[4/3]">
                         <img 
-                            src="/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
+                            src="/images/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
                             alt="Children reading books at CHASOF event" 
                             class="absolute inset-0 w-full h-full object-cover"
                         >
@@ -251,7 +229,7 @@
                 <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
                     <div class="relative w-full aspect-[4/3]">
                         <img 
-                            src="/Snapins.ai_466864851_1084230620092094_7471021545178724828_n_1080.jpg" 
+                            src="/images/Snapins.ai_466864851_1084230620092094_7471021545178724828_n_1080.jpg" 
                             alt="Volunteers distributing books" 
                             class="absolute inset-0 w-full h-full object-cover"
                         >
@@ -264,7 +242,7 @@
                 <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
                     <div class="relative w-full aspect-[4/3]">
                         <img 
-                            src="/Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg" 
+                            src="/images/Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg" 
                             alt="Community library opening" 
                             class="absolute inset-0 w-full h-full object-cover"
                         >
@@ -277,7 +255,7 @@
                 <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
                     <div class="relative w-full aspect-[4/3]">
                         <img 
-                            src="/WhatsApp Image 2025-01-01 at 20.38.00_1101e87e.jpg" 
+                            src="/images/WhatsApp Image 2025-01-01 at 20.38.00_1101e87e.jpg" 
                             alt="Workshop for educators" 
                             class="absolute inset-0 w-full h-full object-cover"
                         >
@@ -290,7 +268,7 @@
                 <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
                     <div class="relative w-full aspect-[4/3]">
                         <img 
-                            src="/IMG-20250110-WA0005.jpg" 
+                            src="/images/IMG-20250110-WA0005.jpg" 
                             alt="Children with donated toys" 
                             class="absolute inset-0 w-full h-full object-cover"
                         >
@@ -303,113 +281,53 @@
         </div>
     </section>
 
-
-    <!-- call to action -->
-<section id="call-to-action" class="py-12 px-8 bg-gray-900">
-    <div class="container mx-auto max-w-7xl">
-        <!-- Donate Now -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 items-center bg-blue-600 rounded-lg shadow-lg overflow-hidden">
-            <!-- Text and Button -->
-            <div class="p-8 flex flex-col justify-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Help Us Shape Lives</h2>
-                <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
-                    Your generous donations provide books, learning resources, and educational support to children in underserved communities. Every contribution makes a difference.
-                </p>
-                <a href="#donate-section" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition mx-auto">Donate Now</a>
-            </div>
-            <!-- Image -->
-            <div class="h-64 md:h-full">
-                <img 
-                    src="./Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg" 
-                    alt="Children receiving books from CHASOF" 
-                    class="w-full h-full object-cover"
-                >
-            </div>
-        </div>
-        <!-- Become a Volunteer -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-            <!-- Text and Button -->
-            <div class="p-8 flex flex-col justify-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Join Us as a Volunteer</h2>
-                <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
-                    Become a part of our mission by volunteering as a home visitor or educator. Help us inspire and empower young minds through early childhood development.
-                </p>
-                <a href="#join_us" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition mx-auto">Volunteer Today</a>
-            </div>
-            <!-- Image -->
-            <div class="h-64 md:h-full">
-                <img 
-                    src="/Snapins.ai_466864851_1084230620092094_7471021545178724828_n_1080.jpg" 
-                    alt="Volunteers engaging with children at CHASOF event" 
-                    class="w-full h-full object-cover"
-                >
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- board of trustee -->
-    <section id="board-of-trustees" class="py-16 px-6 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Board of Trustees</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Trustee 1 -->
-                <div class="flex flex-col items-center">
+    <!-- Call to Action -->
+    <section id="call-to-action" class="py-12 px-8 bg-gray-900">
+        <div class="container mx-auto max-w-7xl">
+            <!-- Donate Now Grid Pair -->
+            <div class="grid grid-cols-1 md:grid-cols-2 items-stretch bg-blue-600 rounded-lg shadow-lg overflow-hidden mb-12">
+                <!-- Grid 1: Image (Left) -->
+                <div class="h-80 md:h-[32rem]">
                     <img 
-                        src="/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
-                        alt="Trustee 1" 
-                        class="w-40 h-40 object-cover mb-4 shadow-md"
+                        src="/images/Snapins.ai_466942101_1084296586722927_5342284279651949290_n_1080.jpg" 
+                        alt="Children receiving books from CHASOF" 
+                        class="w-full h-full object-cover"
                     >
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">victoria osadebe</h3>
-                        <p class="text-md text-gray-600 italic mt-1">Chairperson</p>
-                    </div>
                 </div>
-                <!-- Trustee 2 -->
-                <div class="flex flex-col items-center">
-                    <img 
-                        src="/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
-                        alt="Trustee 2" 
-                        class="w-40 h-40 object-cover mb-4 shadow-md"
-                    >
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">osadebe</h3>
-                        <p class="text-md text-gray-600 italic mt-1">founder</p>
-                    </div>
+                <!-- Grid 2: Text and Button (Right) -->
+                <div class="h-80 md:h-[32rem] p-8 flex flex-col justify-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Help Us Shape Lives</h2>
+                    <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
+                        Your generous donations provide books, learning resources, and educational support to children in underserved communities. Every contribution makes a difference.
+                    </p>
+                    <a href="#donate-section" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition mx-auto">Donate Now</a>
                 </div>
-                <!-- Trustee 3 -->
-                <div class="flex flex-col items-center">
-                    <img 
-                        src="/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
-                        alt="Trustee 3" 
-                        class="w-40 h-40 object-cover mb-4 shadow-md"
-                    >
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">osadebe</h3>
-                        <p class="text-md text-gray-600 italic mt-1">Treasurer</p>
-                    </div>
+            </div>
+            <!-- Become a Volunteer Grid Pair -->
+            <div class="grid grid-cols-1 md:grid-cols-2 items-stretch bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <!-- Grid 3: Text and Button (Left) -->
+                <div class="h-80 md:h-[32rem] p-8 flex flex-col justify-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Join Us as a Volunteer</h2>
+                    <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
+                        Become a part of our mission by volunteering as a home visitor or educator. Help us inspire and empower young minds through early childhood development.
+                    </p>
+                    <a href="#join_us" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition mx-auto">Volunteer Today</a>
                 </div>
-                <!-- Trustee 4 -->
-                <div class="flex flex-col items-center">
+                <!-- Grid 4: Image (Right) -->
+                <div class="h-80 md:h-[32rem]">
                     <img 
-                        src="/Snapins.ai_320560665_673272407540797_6441473052936657107_n_1080.jpg" 
-                        alt="Trustee 4" 
-                        class="w-40 h-40 object-cover mb-4 shadow-md"
+                        src="/images/volunteer.png" 
+                        alt="Volunteers engaging with children at CHASOF event" 
+                        class="w-full h-full object-cover"
                     >
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 transform -rotate-3 bg-blue-100 inline-block px-2 py-1 rounded">oasdebe</h3>
-                        <p class="text-md text-gray-600 italic mt-1">Secretary</p>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    
-    <section id="goals-vision-mission" class="py-16 px-6 bg-white">
-        <div class="container mx-auto">
+    <!-- Goals, Vision, Mission -->
+    <section id="goals-vision-mission" class="py-12 px-8 bg-white">
+        <div class="container mx-auto max-w-7xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <!-- Our Goals -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -433,13 +351,13 @@
             <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
                 <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Mission</h2>
                 <p class="text-lg text-gray-700">
-                    To provide educational resources, books, and programs that inspire curiosity, build confidence, and 
-                    lay the foundation for lifelong learning in children aged 0-8, with a focus on underserved regions.
+                    To promote family literacy in disadvantaged population by giving FREE books to children ages 0-5 and ultimately set off revolution in reading culture of our children thereby increasing school enrollment and reducing dropout rate.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Donate Section -->
     <section id="donate-section" class="py-12 px-8 bg-white">
         <div class="container mx-auto max-w-7xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -465,48 +383,73 @@
                         <iframe 
                             src="https://docs.google.com/forms/d/e/1FAIpQLScVT1dicXaVwGHeVKMtDrv_muh0NzYmQEb5AYh06L9sItL12w/viewform?embedded=true" 
                             width="100%" 
-                            height="520" 
+                            height="400" 
                             frameborder="0" 
                             marginheight="0" 
                             marginwidth="0" 
                             class="w-full rounded-lg shadow-sm"
-                        >Loading please wait......</iframe>
+                        >Loading please wait...</iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section id="blog" class="bg-gray-50 py-12 px-8">
+        <div class="container mx-auto max-w-7xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 tracking-tight">Our Blog</h2>
+            <!-- SnapWidget Embed -->
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform duration-500 hover:scale-[1.01]">
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe 
+                    src="https://snapwidget.com/embed/1096091"
+                    class="snapwidget-widget w-full h-[400px] sm:h-[450px]"
+                    allowtransparency="true"
+                    frameborder="0"
+                    scrolling="no"
+                    style="border: none; overflow: hidden;"
+                    title="Instagram Feed - CHASOF"
+                ></iframe>
+            </div>
+            <!-- Follow CTA -->
+            <div class="mt-8">
+                <a href="https://instagram.com/chasof_headstart" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="inline-block bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-purple-800 transition-colors duration-300">
+                    Follow Us on Instagram
+                </a>
+            </div>
+        </div>
+    </section>      
 
-    <!-- footer section -->
+    <!-- Footer Section -->
     <footer id="footer-section" class="bg-gray-800 text-white py-4 px-4">
         <div class="container mx-auto mt-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-
                 <!-- Contact Info -->
                 <div>
                     <h3 class="text-lg font-semibold mb-2" id="contact-us">Get in Touch</h3>
                     <div class="flex items-center space-x-2 mb-2">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>    
-                    <a href="mailto:chasofheadstart@gmail.com" class="text-gray-300 hover:text-white text-xs">chasofheadstart@gmail.com</a>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>    
+                        <a href="mailto:chasofheadstart@gmail.com" class="text-gray-300 hover:text-white text-xs">chasofheadstart@gmail.com</a>
                     </div>
                     <div class="flex space-x-2">
                         <a href="https://facebook.com/chasof_headstart" target="_blank" class="text-gray-300 hover:text-white">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
                         </a>
                         <a href="https://wa.me/+2348023110009" target="_blank" class="text-gray-300 hover:text-white">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>  
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>  
                         </a>
                         <a href="https://instagram.com/chasof_headstart" target="_blank" class="text-gray-300 hover:text-white">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="tel:+14049347211" target="_blank" class="text-gray-300 hover:text-white">
+                        <a href="tel:+2349022689437" target="_blank" class="text-gray-300 hover:text-white">
                             <i class="fa fa-phone-square" aria-hidden="true"></i>
                         </a>
-
                     </div>
                 </div>
-
                 <!-- Navigation -->
                 <div>
                     <h3 class="text-lg font-semibold mb-2">Explore</h3>
@@ -526,7 +469,6 @@
                         and education in underserved communities.
                     </p>
                 </div>
-
             </div>
             <div class="mt-4 text-center text-gray-400 text-xs">
                 <p>© 2025 Chukwura. All rights reserved.</p>
@@ -534,60 +476,59 @@
         </div>
     </footer>
 
-    <!-- scroll-arrow -->
+    <!-- Scroll-Arrow -->
     <a href="#home" id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600/80 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 z-30 hidden">
-    <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
     </a>
 
-<!-- Optional JavaScript for Smooth Scrolling -->
-<script>
-    // Mobile Menu Toggle with Touch Support and Icon Swap
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = menuBtn.querySelector('i'); // Target the <i> inside the button
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        // Mobile Menu Toggle with Touch Support and Icon Swap
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuBtn.querySelector('i'); // Target the <i> inside the button
 
-    function toggleMenu(e) {
-        e.preventDefault(); // Prevent default touch/click behavior if needed
-        console.log('Menu toggled!'); // Debug to confirm action
-        mobileMenu.classList.toggle('hidden');
+        function toggleMenu(e) {
+            e.preventDefault(); // Prevent default touch/click behavior if needed
+            console.log('Menu toggled!'); // Debug to confirm action
+            mobileMenu.classList.toggle('hidden');
 
-        // Toggle icon between hamburger and X
-        if (mobileMenu.classList.contains('hidden')) {
-            menuIcon.classList.remove('fa-times');
-            menuIcon.classList.add('fa-bars');
-        } else {
-            menuIcon.classList.remove('fa-bars');
-            menuIcon.classList.add('fa-times');
+            // Toggle icon between hamburger and X
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            }
         }
-    }
 
-    menuBtn.addEventListener('click', toggleMenu);
-    menuBtn.addEventListener('touchstart', toggleMenu); // Mobile touch support
+        menuBtn.addEventListener('click', toggleMenu);
+        menuBtn.addEventListener('touchstart', toggleMenu); // Mobile touch support
 
-    // Swiper Initialization
-    var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-    });
+        // Swiper Initialization
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
 
-    // Back to Top Smooth Scroll and Visibility
-    const backToTop = document.getElementById('back-to-top');
-    backToTop.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+        // Back to Top Smooth Scroll and Visibility
+        const backToTop = document.getElementById('back-to-top');
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 200) {
-            backToTop.classList.remove('hidden');
-        } else {
-            backToTop.classList.add('hidden');
-        }
-    });
-</script>
-
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 200) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
